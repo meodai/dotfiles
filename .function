@@ -2,12 +2,20 @@
 
 # Brew install with backup
 brew-install () {
-    brew install "$@"; brew list > ~/.dotfiles/brew.list
+    brew install "$@"; brew-backup;
+
 }
 
 # Cask install with backup
 cask-install () {
-    brew cask install "$@"; brew cask list > ~/.dotfiles/cask.list
+    brew cask install "$@"; brew-backup;
+}
+
+# backups installed brew's
+brew-backup () {
+    local current_dir=$PWD;
+    cd ~/.dotfiles;brew bundle dump --force;
+    cd $current_dir;
 }
 
 # Creates a server and opens chrome
