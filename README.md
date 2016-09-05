@@ -1,5 +1,5 @@
 # dotfiles
-my dotfiles 
+I stole my dotfiles from all over the place <3 
 
 ## Installation
 
