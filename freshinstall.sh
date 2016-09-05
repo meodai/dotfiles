@@ -5,9 +5,14 @@ cd ~/.dotfiles
 # get homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install dialog
+
+if ( ! dialog --title "!Warning!"  --yesno "Do you want to install meodai's .dotfiles?" 6 30) then
+    return;
+fi;
+
 # tap Brew Bundle
 brew tap Homebrew/bundle
-
 # restore installed apps
 brew bundle
 

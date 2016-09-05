@@ -13,8 +13,11 @@ cask-install () {
 
 # backups installed brew's
 brew-backup () {
+    # saves current dir
     local current_dir=$PWD;
+    # overwrite the exisiting Brewfile
     cd ~/.dotfiles;brew bundle dump --force;
+    # returns to previous dir
     cd $current_dir;
 }
 
