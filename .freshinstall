@@ -10,5 +10,5 @@ brew install mackup
 mackup restore
 
 # install previously installed command line tools and app's
-brew install `cat brew.list`
-brew cask install `cat cask.list`
+brew install `cat ~/.dotfiles/brew.list`
+brew cask install `cat ~/.dotfiles/cask.list`
