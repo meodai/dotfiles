@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# Folders
+alias sites='cd ~/Sites'
+alias gin='cd ~/Sites/ginetta'
+
+# Edit /etc/hosts file
+alias editHosts='sudo edit /etc/hosts'
+
+# App & command aliases
+alias c='clear'
+alias chrome='open -a "Google Chrome" '
+alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl '
+alias a='open -a "Atom" '
+
+# OS Utilities
+alias hideicons='defaults write com.apple.finder CreateDesktop -bool false;killall Finder;'
+alias showicons='defaults write com.apple.finder CreateDesktop -bool true;killall Finder;'
+
+# Full Recursive Directory Listing
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+
+# Recursively delete .DS_Store files
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+
+# colors
+export TERM=xterm-color
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    colorflag="--color"
+    export LS_COLORS='di=1;34:ln=1;35:so=1;31:pi=1;33:ex=1;32:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+else # macOS `ls`
+    colorflag="-G"
+    export LSCOLORS='ExFxBxDxCxegedabagacad'
+fi
+
+alias egrep='egrep -r -n --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias fgrep='fgrep -r -n --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias grep='grep -r -n --extended-regexp --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias less='less -r'
+alias ls='ls -alhsF ${colorflag} -G'
+
+# GIT
+alias gittree='git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"'
+
+# IP addresses
+alias ipw='ifconfig en0 inet'
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Public facing IP Address
+alias myip='curl ip.appspot.com'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; brew cask update; brew cask cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'

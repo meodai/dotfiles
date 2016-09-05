@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# get homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install mackup
+brew install mackup
+
+# restore mackup backup
+mackup restore
+
+# install previously installed command line tools and app's
+brew install `cat brew.list`
+brew cask install `cat cask.list`
