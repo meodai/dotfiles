@@ -55,11 +55,11 @@ archey -c
 EOT
 
 # creates a a symlink for EXIT script
-rm ~/.seeyouspacecowboy.sh
-ln -s $PWD/seeyouspacecowboy.sh ~/seeyouspacecowboy.sh
+#rm ~/.seeyouspacecowboy.sh
+#ln -s $PWD/seeyouspacecowboy.sh ~/seeyouspacecowboy.sh
 
 # make sure seeyouspacecowboy is called on EXIT
-echo 'sh ~/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
+echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
 
 # loads the brand new bash_profile
 source ~/.bash_profile
