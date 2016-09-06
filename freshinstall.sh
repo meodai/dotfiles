@@ -13,6 +13,7 @@ fi;
 
 # tap Brew Bundle
 brew tap Homebrew/bundle
+
 # restore installed apps
 brew bundle
 
@@ -53,6 +54,12 @@ unset file;
 say -v "Zarvox" "new terminal" &
 archey -c
 EOT
+
+#node stuff
+npm install -g peerflix
+npm install -g gulp-cli
+npm install -g vue-cli
+curl https://install.meteor.com/ | sh
 
 # creates a a symlink for EXIT script
 #rm ~/.seeyouspacecowboy.sh
