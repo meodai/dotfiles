@@ -11,5 +11,5 @@ cd .dotfiles
 ```
 
 ## Thanks to
-[@caillou](https://github.com/caillou) for telling me about dot files in the first place
-[@mathiasbynens](https://github.com/mathiasbynens/) for this [dot file repository](https://github.com/mathiasbynens/dotfiles)
+- [@caillou](https://github.com/caillou) for telling me about dot files in the first place
+- [@mathiasbynens](https://github.com/mathiasbynens/) for this [dot file repository](https://github.com/mathiasbynens/dotfiles)
