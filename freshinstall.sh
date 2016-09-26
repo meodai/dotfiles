@@ -14,6 +14,10 @@ fi;
 # tap Brew Bundle
 brew tap Homebrew/bundle
 
+brew install mas;
+
+mas signin iDontTellYouMyAppleID@whatever.com;
+
 # restore installed apps
 brew bundle
 
