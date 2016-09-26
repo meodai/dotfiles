@@ -30,6 +30,7 @@ brew 'libtiff', args: ['universal']
 brew 'wxmac'
 brew 'erlang'
 brew 'couchdb'
+brew 'cscope'
 brew 'curl'
 brew 'dark-mode'
 brew 'dialog'
@@ -79,6 +80,8 @@ brew 'libyaml'
 brew 'lua'
 brew 'lynx'
 brew 'mackup'
+brew 'python3'
+brew 'macvim', args: ['with-override-system-vim']
 brew 'mas'
 brew 'mhash'
 brew 'mcrypt'
@@ -87,10 +90,10 @@ brew 'moreutils'
 brew 'mplayer'
 brew 'mysql'
 brew 'n'
+brew 'net-snmp'
 brew 'optipng'
 brew 'phantomjs'
 brew 'pixman'
-brew 'python3'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'redis'
@@ -120,15 +123,20 @@ cask 'boxer'
 cask 'caffeine'
 cask 'disk-inventory-x'
 cask 'firefox'
+cask 'franz'
+cask 'gifrocket'
 cask 'google-chrome'
+cask 'google-drive'
 cask 'grafx'
 cask 'haroopad'
 cask 'helium'
+cask 'hyperterm'
 cask 'imagealpha'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'ksdiff'
 cask 'liteicon'
+cask 'macclean'
 cask 'magicavoxel'
 cask 'mixxx'
 cask 'monolingual'
@@ -152,13 +160,13 @@ cask 'virtualbox'
 cask 'vlc'
 cask 'webpquicklook'
 cask 'witch'
-mas 'Xcode', id: 497799835
-mas 'The Unarchiver', id: 425424353
-mas 'App Factory', id: 556464792
-mas 'Kaleidoscope', id: 587512244
-mas 'PhotoSweeper', id: 463362050
-mas 'Noizio', id: 928871589
-mas 'Contacts Sync For Google Gmail', id: 451691288
-mas 'iA Writer', id: 775737590
-mas 'MindNode', id: 992076693
-mas '123D Design', id: 566042322
+mas '123D Design (2.2.1)', id: 566042322
+mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
+mas 'Noizio (1.5)', id: 928871589
+mas 'MindNode (2.3.5)', id: 992076693
+mas 'App Factory (2.0)', id: 556464792
+mas 'iA Writer (3.2.6)', id: 775737590
+mas 'Kaleidoscope (2.1.0)', id: 587512244
+mas 'PhotoSweeper (2.2.6)', id: 463362050
+mas 'The Unarchiver (3.11.1)', id: 425424353
+mas 'Xcode (8.0)', id: 497799835
