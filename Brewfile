@@ -139,6 +139,7 @@ cask 'liteicon'
 cask 'magicavoxel'
 cask 'mixxx'
 cask 'monolingual'
+cask 'mysimbl'
 cask 'namebench'
 cask 'qlcolorcode'
 cask 'qlimagesize'
@@ -162,11 +163,11 @@ cask 'webpquicklook'
 cask 'witch'
 mas '123D Design (2.2.1)', id: 566042322
 mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
-mas 'Noizio (1.5)', id: 928871589
 mas 'MindNode (2.3.5)', id: 992076693
-mas 'App Factory (2.0)', id: 556464792
-mas 'iA Writer (3.2.6)', id: 775737590
 mas 'Kaleidoscope (2.1.0)', id: 587512244
+mas 'App Factory (2.0)', id: 556464792
+mas 'Noizio (1.5)', id: 928871589
 mas 'PhotoSweeper (2.2.6)', id: 463362050
-mas 'The Unarchiver (3.11.1)', id: 425424353
 mas 'Xcode (8.0)', id: 497799835
+mas 'The Unarchiver (3.11.1)', id: 425424353
+mas 'iA Writer (3.2.6)', id: 775737590
