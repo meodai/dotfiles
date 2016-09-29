@@ -18,7 +18,6 @@ brew 'gmp'
 brew 'coreutils'
 brew 'nspr'
 brew 'spidermonkey'
-brew 'icu4c'
 brew 'libtool', args: ['universal']
 brew 'pkg-config'
 brew 'makedepend'
@@ -44,13 +43,10 @@ brew 'lame'
 brew 'xvid'
 brew 'freetype', args: ['universal']
 brew 'fontconfig', args: ['universal']
-brew 'libogg'
-brew 'libvorbis'
 brew 'webp', args: ['universal']
 brew 'ffmpeg'
 brew 'figlet'
 brew 'findutils'
-brew 'flac'
 brew 'gd', args: ['universal']
 brew 'go'
 brew 'git-lfs'
@@ -75,7 +71,6 @@ brew 'libgphoto2', args: ['universal']
 brew 'libicns', args: ['universal']
 brew 'libksba'
 brew 'libmicrohttpd'
-brew 'libmikmod'
 brew 'libvo-aacenc'
 brew 'libxml2'
 brew 'libyaml'
