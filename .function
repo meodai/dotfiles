@@ -2,13 +2,17 @@
 
 # Brew install with backup
 brew-install () {
-    brew install "$@"; brew-backup;
+    brew install "$@"; brew-backup; mackup backup;
 
 }
 
 # Cask install with backup
 cask-install () {
-    brew cask install "$@"; brew-backup;
+    brew cask install "$@"; brew-backup; mackup backup;
+}
+
+mas-install () {
+    mas install "$@"; brew-backup; mackup backup;
 }
 
 # backups installed brew's
