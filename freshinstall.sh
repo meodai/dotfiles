@@ -39,8 +39,6 @@ e_header '💾 Installing Applications and command line tools'
 brew bundle
 e_success '💾 Installed all apps and tools from Brewfile'
 
-return;
-
 e_header '💾 Creates mackup config file'
 # makes sure mackup config is correct before restoring backup
 cat >~/.mackup.cfg <<'EOT'
