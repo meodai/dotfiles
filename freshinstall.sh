@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # logging
-function e_header()   { echo -e "\n\033[1m$@\033[0m"; }
-function e_success()  { echo -e " \033[1;32m✅\033[0m  $@"; }
+function e_header() { echo -e "\n\033[1m$@\033[0m"; }
 
 cd ~/.dotfiles
 
@@ -37,7 +36,7 @@ mas signin $appleid
 e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
-e_success '💾 Installed all apps and tools from Brewfile'
+e_header '💾 Installed all apps and tools from Brewfile'
 
 e_header '💾 Creates mackup config file'
 # makes sure mackup config is correct before restoring backup
@@ -112,7 +111,7 @@ echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
 # loads the brand new bash_profile
 source ~/.bash_profile
 
-e_success 'you did it!'
+e_header '✅ you did it!'
 
 # byebye
 . seeyouspacecowboy.sh

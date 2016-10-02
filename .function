@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
+alert () { echo -e "\n\033[1m$@\033[0m"; }
 
 # Brew install with backup
 brew-install () {
     brew install "$@"; brew-backup; mackup backup;
-
 }
 
 # Cask install with backup
@@ -26,7 +26,7 @@ brew-backup () {
 }
 
 # Creates a server and opens chrome
-apatschi() {
+apatschi () {
     chrome "http://localhost:8000"
     python -m SimpleHTTPServer
 }
@@ -34,31 +34,13 @@ apatschi() {
 # Opens any file in MacOS Quicklook Preview
 ql () { qlmanage -p "$*" >& /dev/null; }
 
-# Simple calculator
-calc() {
-    local result="";
-    result="$(printf "scale=10;$*\n" | bc --mathlib | tr -d '\\\n')";
-    #                       └─ default (when `--mathlib` is used) is 20
-    #
-    if [[ "$result" == *.* ]]; then
-        # improve the output for decimal numbers
-        printf "$result" |
-        sed -e 's/^\./0./'        `# add "0" for cases like ".5"` \
-            -e 's/^-\./-0./'      `# add "0" for cases like "-.5"`\
-            -e 's/0*$//;s/\.$//';  # remove trailing zeros
-    else
-        printf "$result";
-    fi;
-    printf "\n";
-}
-
 # Create a new directory and enter it
-mkd() {
+mkd () {
     mkdir -p "$@" && cd "$_";
 }
 
 # Change working directory to the top-most Finder window location
-cdf() {
+cdf () {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
     if [ "$target" != "" ]; then
         cd "$target"; pwd
@@ -71,7 +53,7 @@ cdf() {
 zipf () { zip -r "$1".zip "$1" ; }
 
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
-targz() {
+targz () {
     local tmpFile="${@%/}.tar";
     tar -cvf "${tmpFile}" --exclude=".DS_Store" "${@}" || return 1;
 
@@ -127,7 +109,7 @@ extract () {
 }
 
 # Determine size of a file or total size of a directory
-fs() {
+fs () {
     if du -b /dev/null > /dev/null 2>&1; then
         local arg=-sbh;
     else
@@ -149,7 +131,7 @@ if [ $? -eq 0 ]; then
 fi;
 
 # Create a data URL from a file
-dataurl() {
+dataurl () {
     local mimeType=$(file -b --mime-type "$1");
     if [[ $mimeType == text/* ]]; then
         mimeType="${mimeType};charset=utf-8";
@@ -158,7 +140,7 @@ dataurl() {
 }
 
 # Create a git.io short URL
-gitio() {
+gitio () {
     if [ -z "${1}" -o -z "${2}" ]; then
         echo "Usage: \`gitio slug url\`";
         return 1;
@@ -167,7 +149,7 @@ gitio() {
 }
 
 # Start an HTTP server from a directory, optionally specifying the port
-server() {
+server () {
     local port="${1:-8000}";
     sleep 1 && open "http://localhost:${port}/" &
     # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
@@ -176,7 +158,7 @@ server() {
 }
 
 # Compare original and gzipped file size
-gz() {
+gz () {
     local origsize=$(wc -c < "$1");
     local gzipsize=$(gzip -c "$1" | wc -c);
     local ratio=$(echo "$gzipsize * 100 / $origsize" | bc -l);
@@ -186,7 +168,7 @@ gz() {
 
 # Syntax-highlight JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-json() {
+json () {
     if [ -t 0 ]; then # argument
         python -mjson.tool <<< "$*" | pygmentize -l javascript;
     else # pipe
@@ -195,12 +177,12 @@ json() {
 }
 
 # Run `dig` and display the most useful info
-digga() {
+digga () {
     dig +nocmd "$1" any +multiline +noall +answer;
 }
 
 # UTF-8-encode a string of Unicode symbols
-escape() {
+escape () {
     printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u);
     # print a newline unless we’re piping the output to another program
     if [ -t 1 ]; then
@@ -209,7 +191,7 @@ escape() {
 }
 
 # Decode \x{ABCD}-style Unicode escape sequences
-unidecode() {
+unidecode () {
     perl -e "binmode(STDOUT, ':utf8'); print \"$@\"";
     # print a newline unless we’re piping the output to another program
     if [ -t 1 ]; then
@@ -218,7 +200,7 @@ unidecode() {
 }
 
 # Get a character’s Unicode code point
-codepoint() {
+codepoint () {
     perl -e "use utf8; print sprintf('U+%04X', ord(\"$@\"))";
     # print a newline unless we’re piping the output to another program
     if [ -t 1 ]; then
@@ -228,7 +210,7 @@ codepoint() {
 
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
-o() {
+o () {
     if [ $# -eq 0 ]; then
         open .;
     else
@@ -240,12 +222,12 @@ o() {
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
-tre() {
+tre () {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
 # display useful host related informaton
-ii() {
+ii () {
     echo -e "\nYou are logged on ${RED}$HOST"
     echo -e "\nAdditionnal information:$NC " ; uname -a
     echo -e "\n${RED}Users logged on:$NC " ; w -h
@@ -258,7 +240,7 @@ ii() {
 }
 
 # remove all local branches that are already merged in the current active branch
-cleangit() {
+cleangit () {
     echo -e "WARNING: If you're on, say, a development branch that was branched off of master, you'll lose your master branch";
     echo -e "still want to do this? [y/N]";
     read REMOVE
