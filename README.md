@@ -1,12 +1,11 @@
-# dotfiles
+# meodai's ❣ dotfiles
 I stole my dotfiles from all over the place <3 And did a nice install script for it.
 
 ## Installation
 
 ```bash
-cd ~
-git clone git@github.com:meodai/dotfiles.git .dotfiles
-cd .dotfiles
+git clone git@github.com:meodai/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 . freshinstall.sh
 ```
 
