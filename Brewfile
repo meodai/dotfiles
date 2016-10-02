@@ -103,7 +103,6 @@ brew 'sane-backends', args: ['universal']
 brew 'trash'
 brew 'tree'
 brew 'unixodbc'
-brew 'vim', args: ['with-override-system-vi']
 brew 'webkit2png'
 brew 'wget'
 brew 'wine'
