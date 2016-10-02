@@ -59,11 +59,24 @@ say -v "Zarvox" "new terminal" &
 archey -c
 EOT
 
+n latest;
+npm update -g npm;
+
 #node stuff
-npm install -g peerflix
-npm install -g gulp-cli
-npm install -g vue-cli
-curl https://install.meteor.com/ | sh
+npm_globals=(
+  peerflix
+  node-inspector
+  gulp-cli
+  vue-cli
+)
+
+for npmglobal in "${npm_globals[@]}"
+do
+  npm install -g ${npmglobal};
+done
+
+curl https://install.meteor.com/ | sh;
+
 
 # creates a a symlink for EXIT script
 #rm ~/.seeyouspacecowboy.sh
