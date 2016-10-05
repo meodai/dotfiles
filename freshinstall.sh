@@ -17,7 +17,7 @@ brew update
 
 brew install dialog
 
-if ( ! dialog --title "!Warning!"  --yesno "Do you want to install meodai's .dotfiles?" 6 30) then
+if ( ! dialog --yesno "Do you want to install meodai's ❣ .dotfiles?" 6 30) then
     return;
 fi;
 
