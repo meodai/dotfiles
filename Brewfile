@@ -140,6 +140,7 @@ cask 'imagealpha'
 cask 'imageoptim'
 cask 'imitone'
 cask 'iterm2'
+cask 'kap'
 cask 'ksdiff'
 cask 'lingon-x'
 cask 'liteicon'
@@ -160,7 +161,9 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'recordit'
+cask 'rightfont'
 cask 'sitesucker'
+cask 'skitch'
 cask 'steam'
 cask 'steelseries-engine'
 cask 'stremio'
@@ -179,11 +182,10 @@ cask 'witch'
 cask 'xbox360-controller-driver'
 mas '123D Design (2.2.1)', id: 566042322
 mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
-mas 'MindNode (2.3.5)', id: 992076693
+mas 'MindNode (2.4.1)', id: 992076693
 mas 'Kaleidoscope (2.1.0)', id: 587512244
 mas 'Xcode (8.0)', id: 497799835
 mas 'iA Writer (3.2.6)', id: 775737590
 mas 'Noizio (1.5)', id: 928871589
 mas 'App Factory (2.0)', id: 556464792
 mas 'PhotoSweeper (2.2.6)', id: 463362050
-mas 'Chipmunk (1.5.4)', id: 405502331
