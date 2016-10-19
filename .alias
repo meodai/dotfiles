@@ -8,6 +8,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# fixes audio when switching between sound-cards (sierra specific)
+alias audiofix="sudo kextunload /System/Library/Extensions/AppleHDA.kext && sudo kextload /System/Library/Extensions/AppleHDA.kext";
+
 # Folders
 alias sites='cd ~/Sites'
 alias gin='cd ~/Sites/ginetta'

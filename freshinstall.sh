@@ -11,6 +11,16 @@ if [[ ! "$(type -P brew)" ]]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# pcname="$(scutil --get ComputerName)"
+
+# set computer name
+sudo scutil --set ComputerName "FreshBookOfMacAir"
+sudo scutil --set LocalHostName "FreshBookOfMacAir"
+sudo scutil --set HostName "FreshBookOfMacAir"
+
+# Flush the DNS cache
+dscacheutil -flushcache
+
 e_header '🍳 Updating homebrew'
 brew doctor
 brew update
@@ -79,7 +89,7 @@ unset file;
 
 # say -v "Zarvox" "hello {$USER}, I'm a new terminal" &
 # Show archey on bootup
-say -v "Zarvox" "new terminal" &
+# say -v "Zarvox" "new terminal" &
 archey -c
 EOT
 
@@ -110,6 +120,8 @@ echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
 
 # loads the brand new bash_profile
 source ~/.bash_profile
+
+
 
 e_header '✅ you did it!'
 

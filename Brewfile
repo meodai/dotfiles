@@ -182,7 +182,7 @@ cask 'witch'
 cask 'xbox360-controller-driver'
 mas '123D Design (2.2.1)', id: 566042322
 mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
-mas 'MindNode (2.4.1)', id: 992076693
+mas 'MindNode (2.4.2)', id: 992076693
 mas 'Kaleidoscope (2.1.0)', id: 587512244
 mas 'Xcode (8.0)', id: 497799835
 mas 'iA Writer (3.2.6)', id: 775737590
