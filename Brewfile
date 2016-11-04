@@ -9,7 +9,6 @@ tap 'josegonzalez/php'
 cask 'osxfuse'
 brew 'archey'
 brew 'autoconf'
-brew 'xz', args: ['universal']
 brew 'automake'
 brew 'readline'
 brew 'bash'
@@ -24,6 +23,7 @@ brew 'makedepend'
 brew 'openssl', args: ['universal']
 brew 'jpeg', args: ['universal']
 brew 'libpng', args: ['universal']
+brew 'xz', args: ['universal']
 brew 'libtiff', args: ['universal']
 brew 'wxmac'
 brew 'erlang'
@@ -180,11 +180,10 @@ cask 'vlc'
 cask 'webpquicklook'
 cask 'witch'
 cask 'xbox360-controller-driver'
-mas '123D Design (2.2.1)', id: 566042322
 mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
-mas 'MindNode (2.4.1)', id: 992076693
+mas 'MindNode (2.4.3)', id: 992076693
 mas 'Kaleidoscope (2.1.0)', id: 587512244
-mas 'Xcode (8.0)', id: 497799835
+mas 'Xcode (8.1)', id: 497799835
 mas 'iA Writer (3.2.6)', id: 775737590
 mas 'Noizio (1.5)', id: 928871589
 mas 'App Factory (2.0)', id: 556464792
