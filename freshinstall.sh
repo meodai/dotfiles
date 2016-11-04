@@ -84,7 +84,7 @@ archey -c
 EOT
 
 e_header '✅ Making sure you are using the latest node'
-n latest
+sudo n latest
 
 e_header '💪 Updates NPM'
 npm update -g npm
@@ -99,9 +99,6 @@ npm_globals=(
   vue-cli
   svgo
 )
-
-#makes sure the latest node is used
-sudo n latest
 
 for npmglobal in "${npm_globals[@]}"
 do
