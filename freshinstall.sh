@@ -90,6 +90,7 @@ e_header '💪 Updates NPM'
 npm update -g npm
 
 e_header '🍉 Installing global node modules'
+
 #node stuff
 npm_globals=(
   peerflix
@@ -98,6 +99,9 @@ npm_globals=(
   vue-cli
   svgo
 )
+
+#makes sure the latest node is used
+sudo n latest
 
 for npmglobal in "${npm_globals[@]}"
 do
