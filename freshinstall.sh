@@ -96,6 +96,7 @@ npm_globals=(
   node-inspector
   gulp-cli
   vue-cli
+  svgo
 )
 
 for npmglobal in "${npm_globals[@]}"
