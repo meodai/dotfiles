@@ -113,7 +113,7 @@ echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
 # loads the brand new bash_profile
 source ~/.bash_profile
 
-e_header '✅ you did it!'
+e_header '🍺 you did it! 🍺'
 
 # byebye
 . seeyouspacecowboy.sh

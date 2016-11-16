@@ -116,6 +116,8 @@ brew 'homebrew/versions/bash-completion2'
 brew 'josegonzalez/php/php56'
 brew 'josegonzalez/php/php56-mcrypt'
 cask '1password'
+cask 'adobe-illustrator-cc'
+cask 'adobe-photoshop-cc'
 cask 'appcleaner'
 cask 'applepi-baker'
 cask 'aseprite'
@@ -152,6 +154,7 @@ cask 'namebench'
 cask 'omnidisksweeper'
 cask 'openxcom'
 cask 'paw'
+cask 'processing'
 cask 'provisionql'
 cask 'qlcolorcode'
 cask 'qlimagesize'
@@ -162,6 +165,7 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'recordit'
 cask 'rightfont'
+cask 'scummvm'
 cask 'sitesucker'
 cask 'skitch'
 cask 'steam'
@@ -180,11 +184,11 @@ cask 'vlc'
 cask 'webpquicklook'
 cask 'witch'
 cask 'xbox360-controller-driver'
-mas 'Contacts Sync For Google Gmail (6.5.2)', id: 451691288
-mas 'MindNode (2.4.3)', id: 992076693
-mas 'Kaleidoscope (2.1.0)', id: 587512244
-mas 'Xcode (8.1)', id: 497799835
-mas 'iA Writer (3.2.6)', id: 775737590
-mas 'Noizio (1.5)', id: 928871589
-mas 'App Factory (2.0)', id: 556464792
-mas 'PhotoSweeper (2.2.6)', id: 463362050
+mas 'Contacts Sync For Google Gmail', id: 451691288
+mas 'MindNode', id: 992076693
+mas 'Kaleidoscope', id: 587512244
+mas 'Xcode', id: 497799835
+mas 'iA Writer', id: 775737590
+mas 'Noizio', id: 928871589
+mas 'App Factory', id: 556464792
+mas 'PhotoSweeper', id: 463362050
