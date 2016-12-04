@@ -12,21 +12,16 @@ brew 'autoconf'
 brew 'automake'
 brew 'readline'
 brew 'bash'
-brew 'icu4c'
 brew 'boost'
 brew 'cmake'
-brew 'gmp'
 brew 'coreutils'
-brew 'libtool', args: ['universal']
-brew 'pkg-config'
-brew 'makedepend'
 brew 'openssl', args: ['universal']
 brew 'jpeg', args: ['universal']
 brew 'libpng', args: ['universal']
-brew 'xz', args: ['universal']
 brew 'libtiff', args: ['universal']
 brew 'wxmac'
 brew 'erlang'
+brew 'icu4c'
 brew 'nspr'
 brew 'spidermonkey'
 brew 'couchdb'
@@ -34,41 +29,39 @@ brew 'cscope'
 brew 'curl'
 brew 'dark-mode'
 brew 'dialog'
-brew 'freetype', args: ['universal']
-brew 'fontconfig', args: ['universal']
 brew 'lame'
-brew 'webp', args: ['universal']
-brew 'gettext'
-brew 'pcre'
 brew 'git'
-brew 'gdbm'
-brew 'sqlite'
-brew 'python'
-brew 'yasm'
 brew 'x264'
 brew 'xvid'
 brew 'ffmpeg'
 brew 'figlet'
 brew 'findutils'
+brew 'freetype', args: ['universal']
+brew 'fontconfig', args: ['universal']
+brew 'webp', args: ['universal']
 brew 'gd', args: ['universal']
-brew 'go'
+brew 'gdbm'
+brew 'gettext'
 brew 'git-lfs'
 brew 'libffi'
+brew 'pcre'
 brew 'glib'
+brew 'gmp'
 brew 'libtasn1', args: ['universal']
 brew 'nettle'
 brew 'gnutls'
-brew 'jasper', args: ['universal']
-brew 'little-cms2', args: ['universal']
+brew 'go'
+brew 'libtool', args: ['universal']
 brew 'graphicsmagick'
 brew 'hidapi'
 brew 'lua'
 brew 'highlight'
 brew 'htop-osx'
 brew 'hub'
-brew 'little-cms'
+brew 'xz', args: ['universal']
 brew 'imagemagick'
 brew 'jansson'
+brew 'jasper', args: ['universal']
 brew 'libevent'
 brew 'libgpg-error'
 brew 'libusb', args: ['universal']
@@ -78,12 +71,17 @@ brew 'libicns', args: ['universal']
 brew 'libksba'
 brew 'libmicrohttpd'
 brew 'libvo-aacenc'
+brew 'sqlite'
+brew 'python'
 brew 'libxml2'
 brew 'libyaml'
+brew 'little-cms'
+brew 'little-cms2', args: ['universal']
 brew 'lynx'
 brew 'mackup'
 brew 'python3'
 brew 'macvim', args: ['with-override-system-vim']
+brew 'makedepend'
 brew 'mas'
 brew 'mhash'
 brew 'mcrypt'
@@ -96,6 +94,7 @@ brew 'net-snmp'
 brew 'optipng'
 brew 'phantomjs'
 brew 'pixman'
+brew 'pkg-config'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'redis'
@@ -106,6 +105,7 @@ brew 'unixodbc'
 brew 'webkit2png'
 brew 'wget'
 brew 'wine'
+brew 'yasm'
 brew 'youtube-dl'
 brew 'homebrew/dupes/grep'
 brew 'homebrew/dupes/openssh'
@@ -128,6 +128,7 @@ cask 'boxer'
 cask 'caffeine'
 cask 'colorpicker-skalacolor'
 cask 'disk-inventory-x'
+cask 'divvy'
 cask 'doomrl'
 cask 'firefox'
 cask 'franz'
