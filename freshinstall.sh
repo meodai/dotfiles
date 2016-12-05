@@ -28,7 +28,6 @@ brew tap Homebrew/bundle
 e_header '🍎 Installing Mas'
 brew install mas
 
-
 e_header '🍏 Enter your apple id, followed by [ENTER]:'
 read appleid
 mas signin $appleid
@@ -106,6 +105,12 @@ do
 done
 
 curl https://install.meteor.com/ | sh
+
+e_header '✅ Makes sure you are using the most recent version of BASH'
+sudo -s
+echo /usr/local/bin/bash >> /etc/shells
+chsh -s /usr/local/bin/bash
+
 
 # make sure seeyouspacecowboy is called on EXIT
 echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
