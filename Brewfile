@@ -1,5 +1,6 @@
 tap 'bramstein/webfonttools'
 tap 'caskroom/cask'
+tap 'caskroom/drivers'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/dupes'
@@ -38,7 +39,7 @@ brew 'figlet'
 brew 'findutils'
 brew 'freetype', args: ['universal']
 brew 'fontconfig', args: ['universal']
-brew 'webp', args: ['universal']
+brew 'webp'
 brew 'gd', args: ['universal']
 brew 'gdbm'
 brew 'gettext'
@@ -48,7 +49,9 @@ brew 'pcre'
 brew 'glib'
 brew 'gmp'
 brew 'libtasn1', args: ['universal']
+brew 'libunistring'
 brew 'nettle'
+brew 'p11-kit'
 brew 'gnutls'
 brew 'go'
 brew 'libtool', args: ['universal']
@@ -125,9 +128,11 @@ cask 'betterzipql'
 cask 'boxer'
 cask 'caffeine'
 cask 'colorpicker-skalacolor'
+cask 'discord'
 cask 'disk-inventory-x'
 cask 'divvy'
 cask 'doomrl'
+cask 'etcher'
 cask 'firefox'
 cask 'franz'
 cask 'gifrocket'
@@ -135,6 +140,7 @@ cask 'google-chrome'
 cask 'google-drive'
 cask 'grafx'
 cask 'haroopad'
+cask 'harvest'
 cask 'helium'
 cask 'imagealpha'
 cask 'imageoptim'
@@ -151,6 +157,7 @@ cask 'mysimbl'
 cask 'namebench'
 cask 'omnidisksweeper'
 cask 'openxcom'
+cask 'optimage'
 cask 'paw'
 cask 'processing'
 cask 'provisionql'
@@ -178,16 +185,17 @@ cask 'tower'
 cask 'transmit'
 cask 'tunnelbear'
 cask 'virtualbox'
+cask 'visual-studio-code'
 cask 'vlc'
 cask 'webpquicklook'
 cask 'witch'
 cask 'xbox360-controller-driver'
-mas 'Contacts Sync For Google Gmail', id: 451691288
-mas 'MindNode', id: 992076693
-mas 'Kaleidoscope', id: 587512244
-mas 'Xcode', id: 497799835
-mas 'iA Writer', id: 775737590
-mas 'Noizio', id: 928871589
 mas 'App Factory', id: 556464792
-mas 'PhotoSweeper', id: 463362050
+mas 'Contacts Sync For Google Gmail', id: 451691288
+mas 'iA Writer', id: 775737590
+mas 'Kaleidoscope', id: 587512244
 mas 'Keynote', id: 409183694
+mas 'MindNode', id: 992076693
+mas 'Noizio', id: 928871589
+mas 'PhotoSweeper', id: 463362050
+mas 'Xcode', id: 497799835
