@@ -10,7 +10,7 @@ alias -- -="cd -"
 
 # Folders
 alias sites='cd ~/Sites'
-alias gin='cd ~/Sites/ginetta'
+alias el='cd ~/Sites/elastiq'
 
 # Edit /etc/hosts file
 alias editHosts='sudo edit /etc/hosts'
