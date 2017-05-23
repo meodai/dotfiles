@@ -248,3 +248,8 @@ cleangit () {
         git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
     fi
 }
+
+# display git branch name
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}

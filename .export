@@ -15,7 +15,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # shell prompt
-export PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[00m\]\n\$ '
+export PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w \[\033[01;35m\]$(parse_git_branch)\[\033[00m\]\n\$ '
 
 # Setting PATH for Python 3.4
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
