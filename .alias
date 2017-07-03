@@ -12,6 +12,9 @@ alias -- -="cd -"
 alias sites='cd ~/Sites'
 alias el='cd ~/Sites/elastiq'
 
+# Projects
+alias zh='cd ~/Sites/elastiq/zurich-frontend-projects/zurich && s . && npm run build:live -s'
+
 # Edit /etc/hosts file
 alias editHosts='sudo edit /etc/hosts'
 
@@ -68,3 +71,6 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; brew cask update; brew cask cleanup; n latest; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+
+# nvm uses n to set the node version to the current nvmrc file
+alias nvm='n $(<.nvmrc)'
