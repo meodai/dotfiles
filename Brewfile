@@ -1,203 +1,208 @@
-tap 'bramstein/webfonttools'
-tap 'caskroom/cask'
-tap 'caskroom/drivers'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/dupes'
-tap 'homebrew/fuse'
-tap 'homebrew/versions'
-tap 'josegonzalez/php'
-cask 'osxfuse'
-brew 'archey'
-brew 'autoconf'
-brew 'automake'
-brew 'readline'
-brew 'bash'
-brew 'bash-completion@2'
-brew 'boost'
-brew 'cmake'
-brew 'coreutils'
-brew 'openssl', args: ['universal']
-brew 'jpeg', args: ['universal']
-brew 'libpng', args: ['universal']
-brew 'libtiff', args: ['universal']
-brew 'wxmac'
-brew 'erlang'
-brew 'icu4c'
-brew 'nspr'
-brew 'spidermonkey'
-brew 'couchdb'
-brew 'cscope'
-brew 'curl'
-brew 'dark-mode'
-brew 'dialog'
-brew 'lame'
-brew 'git'
-brew 'x264'
-brew 'xvid'
-brew 'ffmpeg'
-brew 'figlet'
-brew 'findutils'
-brew 'freetype', args: ['universal']
-brew 'fontconfig', args: ['universal']
-brew 'webp'
-brew 'gd', args: ['universal']
-brew 'gdbm'
-brew 'gettext'
-brew 'git-lfs'
-brew 'libffi'
-brew 'pcre'
-brew 'glib'
-brew 'gmp'
-brew 'libtasn1', args: ['universal']
-brew 'libunistring'
-brew 'nettle'
-brew 'p11-kit'
-brew 'gnutls'
-brew 'go'
-brew 'libtool', args: ['universal']
-brew 'graphicsmagick'
-brew 'hidapi'
-brew 'lua'
-brew 'highlight'
-brew 'htop-osx'
-brew 'hub'
-brew 'xz', args: ['universal']
-brew 'imagemagick'
-brew 'jansson'
-brew 'jasper'
-brew 'libevent'
-brew 'libgpg-error'
-brew 'libusb', args: ['universal']
-brew 'libusb-compat', args: ['universal']
-brew 'libgphoto2', args: ['universal']
-brew 'libicns', args: ['universal']
-brew 'libksba'
-brew 'libmicrohttpd'
-brew 'libvo-aacenc'
-brew 'sqlite'
-brew 'python'
-brew 'libxml2'
-brew 'libyaml'
-brew 'little-cms'
-brew 'little-cms2', args: ['universal']
-brew 'lynx'
-brew 'mackup'
-brew 'python3'
-brew 'macvim', args: ['with-override-system-vim']
-brew 'makedepend'
-brew 'mas'
-brew 'mhash'
-brew 'mcrypt'
-brew 'mono'
-brew 'moreutils'
-brew 'mplayer'
-brew 'mysql'
-brew 'n'
-brew 'net-snmp'
-brew 'optipng'
-brew 'phantomjs'
-brew 'pixman'
-brew 'pkg-config'
-brew 'ruby-build'
-brew 'rbenv'
-brew 'redis'
-brew 'sane-backends', args: ['universal']
-brew 'trash'
-brew 'tree'
-brew 'unixodbc'
-brew 'webkit2png'
-brew 'wget'
-brew 'wine'
-brew 'yasm'
-brew 'youtube-dl'
-brew 'homebrew/dupes/grep'
-brew 'homebrew/dupes/openssh'
-brew 'homebrew/dupes/screen'
-brew 'homebrew/fuse/ntfs-3g'
-brew 'homebrew/fuse/sshfs'
-brew 'josegonzalez/php/php56'
-brew 'josegonzalez/php/php56-mcrypt'
-cask '1password'
-cask 'appcleaner'
-cask 'applepi-baker'
-cask 'aseprite'
-cask 'atom'
-cask 'bartender'
-cask 'betterzipql'
-cask 'boxer'
-cask 'caffeine'
-cask 'colorpicker-skalacolor'
-cask 'discord'
-cask 'disk-inventory-x'
-cask 'divvy'
-cask 'doomrl'
-cask 'etcher'
-cask 'firefox'
-cask 'franz'
-cask 'gifrocket'
-cask 'google-chrome'
-cask 'google-drive'
-cask 'grafx'
-cask 'haroopad'
-cask 'harvest'
-cask 'helium'
-cask 'imagealpha'
-cask 'imageoptim'
-cask 'imitone'
-cask 'iterm2'
-cask 'kap'
-cask 'ksdiff'
-cask 'lingon-x'
-cask 'liteicon'
-cask 'magicavoxel'
-cask 'microsoft-lync'
-cask 'mixxx'
-cask 'monolingual'
-cask 'mysimbl'
-cask 'namebench'
-cask 'omnidisksweeper'
-cask 'openxcom'
-cask 'optimage'
-cask 'paw'
-cask 'platypus'
-cask 'processing'
-cask 'provisionql'
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlprettypatch'
-cask 'qlstephen'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-cask 'recordit'
-cask 'rightfont'
-cask 'scummvm'
-cask 'sitesucker'
-cask 'skitch'
-cask 'steam'
-cask 'steelseries-engine'
-cask 'stremio'
-cask 'sublime-text'
-cask 'suspicious-package'
-cask 'teamspeak-client'
-cask 'telegram-desktop'
-cask 'the-unarchiver'
-cask 'tower'
-cask 'transmit'
-cask 'tunnelbear'
-cask 'virtualbox'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'webpquicklook'
-cask 'witch'
-cask 'xbox360-controller-driver'
-mas 'App Factory', id: 556464792
-mas 'Contacts Sync For Google Gmail', id: 451691288
-mas 'iA Writer', id: 775737590
-mas 'Kaleidoscope', id: 587512244
-mas 'Keynote', id: 409183694
-mas 'MindNode', id: 992076693
-mas 'Noizio', id: 928871589
-mas 'PhotoSweeper', id: 463362050
-mas 'Xcode', id: 497799835
+tap "bramstein/webfonttools"
+tap "caskroom/cask"
+tap "caskroom/drivers"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
+tap "homebrew/fuse"
+tap "homebrew/versions"
+tap "josegonzalez/php"
+cask "osxfuse"
+brew "archey"
+brew "autoconf"
+brew "automake"
+brew "bash"
+brew "bash-completion@2"
+brew "boost"
+brew "fontconfig"
+brew "gettext"
+brew "glib"
+brew "pixman"
+brew "coreutils"
+brew "jpeg", args: ["universal"]
+brew "openssl"
+brew "icu4c"
+brew "nspr"
+brew "spidermonkey"
+brew "couchdb"
+brew "cscope"
+brew "curl"
+brew "dark-mode"
+brew "dialog"
+brew "erlang"
+brew "lame"
+brew "little-cms2", args: ["universal"]
+brew "git"
+brew "x264"
+brew "xvid"
+brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-frei0r", "with-libass", "with-libvorbis", "with-libvpx", "with-opencore-amr", "with-openjpeg", "with-opus", "with-rtmpdump", "with-speex", "with-theora", "with-tools"]
+brew "figlet"
+brew "findutils"
+brew "gd", args: ["universal"]
+brew "gdbm"
+brew "git-lfs"
+brew "gmp"
+brew "libunistring"
+brew "nettle"
+brew "gnutls"
+brew "go"
+brew "pkg-config"
+brew "sqlite"
+brew "gource"
+brew "libtool", args: ["universal"]
+brew "graphicsmagick"
+brew "grep"
+brew "hidapi"
+brew "lua"
+brew "highlight"
+brew "htop-osx"
+brew "hub"
+brew "imagemagick"
+brew "jansson"
+brew "jasper"
+brew "libevent"
+brew "libgpg-error"
+brew "libusb", args: ["universal"]
+brew "libusb-compat"
+brew "libgphoto2"
+brew "libicns", args: ["universal"]
+brew "libksba"
+brew "libmicrohttpd"
+brew "libvo-aacenc"
+brew "libvpx"
+brew "libxml2"
+brew "libyaml"
+brew "little-cms"
+brew "lynx"
+brew "mackup"
+brew "python3"
+brew "macvim", args: ["with-override-system-vim"]
+brew "makedepend"
+brew "mas"
+brew "mhash"
+brew "mcrypt"
+brew "mercurial"
+brew "mg"
+brew "mono"
+brew "moreutils"
+brew "mplayer"
+brew "mysql"
+brew "n"
+brew "net-snmp"
+brew "ntfs-3g"
+brew "openssh"
+brew "optipng"
+brew "phantomjs"
+brew "poppler"
+brew "ruby-build"
+brew "rbenv"
+brew "redis"
+brew "sane-backends"
+brew "screen"
+brew "sdl"
+brew "sdl_gfx"
+brew "sdl_image"
+brew "sdl_mixer", args: ["with-flac", "with-libmikmod"]
+brew "sshfs"
+brew "trash"
+brew "tree"
+brew "unixodbc"
+brew "webkit2png"
+brew "wget"
+brew "wine"
+brew "yaml-cpp", args: ["with-static-lib"]
+brew "yasm"
+brew "youtube-dl"
+brew "josegonzalez/php/php56"
+brew "josegonzalez/php/php56-mcrypt"
+cask "1password"
+cask "adobe-creative-cloud"
+cask "airfoil"
+cask "appcleaner"
+cask "applepi-baker"
+cask "aseprite"
+cask "atom"
+cask "betterzipql"
+cask "boxer"
+cask "caffeine"
+cask "colorpicker-skalacolor"
+cask "discord"
+cask "disk-inventory-x"
+cask "divvy"
+cask "doomrl"
+cask "duet"
+cask "etcher"
+cask "firefox"
+cask "flux"
+cask "franz"
+cask "gifrocket"
+cask "google-chrome"
+cask "google-drive"
+cask "grafx"
+cask "haroopad"
+cask "harvest"
+cask "helium"
+cask "imagealpha"
+cask "imageoptim"
+cask "imitone"
+cask "iterm2"
+cask "kap"
+cask "ksdiff"
+cask "lingon-x"
+cask "liteicon"
+cask "magicavoxel"
+cask "microsoft-lync"
+cask "mixxx"
+cask "monodraw"
+cask "monolingual"
+cask "mysimbl"
+cask "namebench"
+cask "numi"
+cask "omnidisksweeper"
+cask "openxcom"
+cask "optimage"
+cask "paw"
+cask "platypus"
+cask "porting-kit"
+cask "processing"
+cask "provisionql"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask "qlstephen"
+cask "quicklook-csv"
+cask "quicklook-json"
+cask "recordit"
+cask "rightfont"
+cask "scummvm"
+cask "sitesucker"
+cask "sketchpacks"
+cask "skitch"
+cask "steam"
+cask "steelseries-engine"
+cask "stremio"
+cask "sublime-text"
+cask "suspicious-package"
+cask "teamspeak-client"
+cask "telegram-desktop"
+cask "the-unarchiver"
+cask "tower"
+cask "transmit"
+cask "tunnelbear"
+cask "vanilla"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "vlc"
+cask "webpquicklook"
+cask "witch"
+cask "xbox360-controller-driver"
+mas "App Factory", id: 556464792
+mas "Contacts Sync For Google Gmail", id: 451691288
+mas "iA Writer", id: 775737590
+mas "Kaleidoscope", id: 587512244
+mas "Keynote", id: 409183694
+mas "MindNode", id: 992076693
+mas "Noizio", id: 928871589
+mas "PhotoSweeper", id: 463362050
+mas "Xcode", id: 497799835
