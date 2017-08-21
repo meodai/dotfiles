@@ -66,9 +66,6 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Public facing IP Address
 alias myip='curl ip.appspot.com'
 
-# Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; brew cask update; brew cask cleanup; n latest; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
