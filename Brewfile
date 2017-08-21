@@ -102,6 +102,7 @@ brew "sdl_gfx"
 brew "sdl_image"
 brew "sdl_mixer", args: ["with-flac", "with-libmikmod"]
 brew "sshfs"
+brew "thefuck"
 brew "tldr"
 brew "trash"
 brew "tree"
