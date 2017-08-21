@@ -39,6 +39,9 @@ brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
 go get github.com/cespare/reflex
 pip3 install coala-bears
 
+# Remove outdated versions from the cellar.
+brew cleanup
+
 e_header '💾 Installed all apps and tools from Brewfile'
 
 e_header '💾 Creates mackup config file'
@@ -54,7 +57,6 @@ skype
 .gitignore_global
 .bash_profile
 EOT
-
 
 e_header '📦 Restores configs from mackup'
 e_header '⌛ have a coffee this will take a while'
@@ -115,6 +117,11 @@ sudo -s
 echo /usr/local/bin/bash >> /etc/shells
 chsh -s /usr/local/bin/bash
 
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+  chsh -s /usr/local/bin/bash;
+fi;
 
 # make sure seeyouspacecowboy is called on EXIT
 echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
