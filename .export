@@ -23,3 +23,7 @@ export PATH
 
 # homebrew cask folder
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# go
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
