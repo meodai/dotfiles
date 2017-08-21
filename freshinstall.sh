@@ -36,6 +36,9 @@ e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
 brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
+go get github.com/cespare/reflex
+pip3 install coala-bears
+
 e_header '💾 Installed all apps and tools from Brewfile'
 
 e_header '💾 Creates mackup config file'
