@@ -226,3 +226,12 @@ cleangit () {
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
+random_wifi_mac() {
+    echo "your prvious MAC address was $(ifconfig en0 | awk '/ether/{print $2}')"
+    local randmac=$(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+    sudo ifconfig en0 ether $randmac
+    sudo ifconfig en0 down
+    sudo ifconfig en0 up
+    echo "your new MAC address is $randmac"
+}
