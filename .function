@@ -130,6 +130,11 @@ if [ $? -eq 0 ]; then
     }
 fi;
 
+# lowercase all files in directory
+lowercase () {
+    rename -f 'y/A-Z/a-z/' *
+}
+
 # Create a data URL from a file
 dataurl () {
     local mimeType=$(file -b --mime-type "$1");
