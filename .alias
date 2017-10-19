@@ -19,10 +19,7 @@ alias zh='cd ~/Sites/elastiq/zurich-frontend-projects/zurich && s . && npm run b
 alias editHosts='sudo edit /etc/hosts'
 
 # App & command aliases
-alias c='clear'
 alias chrome='open -a "Google Chrome" '
-alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl '
-alias a='open -a "Atom" '
 
 # OS Utilities
 alias hideicons='defaults write com.apple.finder CreateDesktop -bool false;killall Finder;'
@@ -30,9 +27,6 @@ alias showicons='defaults write com.apple.finder CreateDesktop -bool true;killal
 
 # Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
-
-# Recursively delete .DS_Store files
-alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 
 # colors
 export TERM=xterm-color
@@ -58,7 +52,6 @@ alias ls='ls -alhsF ${colorflag} -G'
 alias gittree='git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"'
 
 # IP addresses
-alias ipw='ifconfig en0 inet'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
