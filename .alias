@@ -60,7 +60,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias myip='curl ip.appspot.com'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; n latest; npm install npm -g; npm update -g; tldr -u; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask upgrade; brew cask cleanup; n latest; npm install npm -g; npm update -g; tldr -u; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 # nvm uses n to set the node version to the current nvmrc file
 alias nvm='n $(<.nvmrc)'
