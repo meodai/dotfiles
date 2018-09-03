@@ -116,8 +116,6 @@ do
   npm install -g ${npmglobal};
 done
 
-curl https://install.meteor.com/ | sh
-
 e_header '✅ Makes sure you are using the most recent version of BASH'
 sudo -s
 echo /usr/local/bin/bash >> /etc/shells
@@ -134,6 +132,9 @@ echo 'sh ~/.dotfiles/seeyouspacecowboy.sh; sleep 2' >> ~/.bash_logout
 
 # loads the brand new bash_profile
 source ~/.bash_profile
+
+# updates all apps and stuff
+update
 
 e_header '🍺 you did it! 🍺'
 
