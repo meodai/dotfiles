@@ -36,9 +36,12 @@ e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
 sudo xcodebuild -license accept
-if [ "${BASH_VERSINFO}" -ge 4 ] && [ -f "$BREW_PREFIX"/share/bash-completion/bash_completion ]; then
-    . "$BREW_PREFIX"/share/bash-completion/bash_completion
-fi
+
+ # First, add the new shell to the list of allowed shells.
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+ # Change to the new shell.
+chsh -s /usr/local/bin/bash 
+exec su - $USER
 
 open -a 'Backup and Sync from Google'
 
