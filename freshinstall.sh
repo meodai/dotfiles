@@ -37,7 +37,7 @@ e_header '💾 Installing Applications and command line tools'
 brew bundle
 sudo xcodebuild -license accept
 
-open 'Backup and Sync from Google'
+open -a 'Backup and Sync from Google'
 
 brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
 go get github.com/cespare/reflex
