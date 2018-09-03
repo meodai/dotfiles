@@ -99,7 +99,7 @@ sudo n latest
 e_header '💪 Updates NPM'
 npm update -g npm
 
-chown -R ${user} /usr/local/lib/node_modules/
+sudo chown -R $USER /usr/local
 
 e_header '🍉 Installing global node modules'
 
