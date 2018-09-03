@@ -35,6 +35,8 @@ mas signin --dialog $appleid
 e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
+open 'Backup and Sync from Google'
+
 brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
 go get github.com/cespare/reflex
 pip3 install coala-bears
@@ -57,6 +59,10 @@ skype
 .gitignore_global
 .bash_profile
 EOT
+
+if ( ! dialog --yesno "Did you restore the Mackup folder from google drive?" 6 30) then
+    return;
+fi;
 
 e_header '📦 Restores configs from mackup'
 e_header '⌛ have a coffee this will take a while'
