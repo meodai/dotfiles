@@ -30,7 +30,7 @@ brew install mas
 
 e_header '🍏 Enter your apple id, followed by [ENTER]:'
 read appleid
-mas signin $appleid
+mas signin --dialog $appleid
 
 e_header '💾 Installing Applications and command line tools'
 # restore installed apps
