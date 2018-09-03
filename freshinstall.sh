@@ -158,10 +158,9 @@ mkdir ~/Sites/
 # makes sure mackup config is correct before restoring backup
 cat >/etc/apache2/users/${USER}.conf <<'EOT'
 <Directory "/Users/$USER/Sites/">
-	Options FollowSymLinks Indexes MultiViews
 	AllowOverride All
-	Order allow,deny
-	Allow from all
+	Options Indexes MultiViews FollowSymLinks
+	Require all granted
 </Directory>
 EOT
 
