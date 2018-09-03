@@ -35,6 +35,8 @@ mas signin --dialog $appleid
 e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
+sudo xcodebuild -license accept
+
 open 'Backup and Sync from Google'
 
 brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
