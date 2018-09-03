@@ -152,10 +152,9 @@ source ~/.bash_profile
 # updates all apps and stuff
 update
 
-if ( ! dialog --yesno "Do you wish to have a 'Sites' folder?" 6 30) then
+if ( dialog --yesno "Do you wish to have a 'Sites' folder?" 6 30) then
+e_header '💾 Creating Sites folder'
 mkdir ~/Sites/
-e_header '💾 Creates mackup config file'
-
 # makes sure mackup config is correct before restoring backup
 cat >/etc/apache2/users/${USER}.conf <<'EOT'
 <Directory "/Users/$USER/Sites/">
