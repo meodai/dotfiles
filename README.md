@@ -4,7 +4,7 @@ I stole my dotfiles from all over the place <3 And did a nice install script for
 ## Installation
 
 ```bash
-git clone git@github.com:meodai/dotfiles.git ~/.dotfiles
+git clone https://github.com/meodai/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 . freshinstall.sh
 ```
