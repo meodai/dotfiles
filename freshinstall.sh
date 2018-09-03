@@ -36,6 +36,9 @@ e_header '💾 Installing Applications and command line tools'
 # restore installed apps
 brew bundle
 sudo xcodebuild -license accept
+if [ "${BASH_VERSINFO}" -ge 4 ] && [ -f "$BREW_PREFIX"/share/bash-completion/bash_completion ]; then
+    . "$BREW_PREFIX"/share/bash-completion/bash_completion
+fi
 
 open -a 'Backup and Sync from Google'
 
