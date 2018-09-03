@@ -109,6 +109,7 @@ npm_globals=(
   gulp-cli
   vue-cli
   svgo
+  jshint
 )
 
 for npmglobal in "${npm_globals[@]}"
