@@ -90,7 +90,6 @@ unset file;
 
 # say -v "Zarvox" "hello {$USER}, I'm a new terminal" &
 # Show archey on bootup
-say -v "Zarvox" "new terminal" &
 archey -c
 EOT
 
@@ -136,6 +135,22 @@ source ~/.bash_profile
 
 # updates all apps and stuff
 update
+
+if ( ! dialog --yesno "Do you wish to have a 'Sites' folder?" 6 30) then
+mkdir ~/Sites/
+e_header '💾 Creates mackup config file'
+
+# makes sure mackup config is correct before restoring backup
+cat >/etc/apache2/users/${USER}.conf <<'EOT'
+<Directory "/Users/$USER/Sites/">
+    Options Indexes MultiViews
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+</Directory>
+EOT
+sudo apachectl start
+fi;
 
 e_header '🍺 you did it! 🍺'
 
