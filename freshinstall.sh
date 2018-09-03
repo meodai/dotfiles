@@ -117,7 +117,7 @@ npm_globals=(
 
 for npmglobal in "${npm_globals[@]}"
 do
-  npm install -g ${npmglobal};
+  sudo npm install -g ${npmglobal};
 done
 
 e_header '✅ Makes sure you are using the most recent version of BASH'
