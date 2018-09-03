@@ -47,7 +47,7 @@ sudo xcodebuild -license accept
 sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
  # Change to the new shell.
 chsh -s /usr/local/bin/bash 
-exec su - $USER
+# exec su - $USER
 
 open -a 'Backup and Sync from Google'
 
