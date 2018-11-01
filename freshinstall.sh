@@ -107,20 +107,26 @@ unset file;
 archey -c
 EOT
 
+# Add the new shell to the list of legit shells
+sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
+# Change the shell for the user
+chsh -s /usr/local/bin/bash
+# Check for Bash 4 and /usr/local/bin/bash...
+echo $BASH && echo $BASH_VERSION
+
 e_header '✅ Making sure you are using the latest node'
-sudo n latest
+n latest
+
+sudo chown -R $USER /usr/local/n/
 
 e_header '💪 Updates NPM'
 npm update -g npm
-
-sudo chown -R $USER /usr/local
 
 e_header '🍉 Installing global node modules'
 
 #node stuff
 npm_globals=(
-  peerflix
-  node-inspector
+  yarn
   gulp-cli
   vue-cli
   svgo

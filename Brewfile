@@ -1,14 +1,12 @@
 tap "bramstein/webfonttools"
 tap "browsh-org/browsh"
 tap "buo/cask-upgrade"
-tap "ethereum/ethereum"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "josegonzalez/php"
 cask "java"
 cask "osxfuse"
 cask "xquartz"
@@ -17,13 +15,10 @@ brew "bash"
 brew "bash-completion@2"
 brew "gettext"
 brew "pixman"
-brew "ccd2iso"
 brew "coreutils"
 brew "curl"
-brew "dark-mode"
 brew "dialog"
 brew "ecm"
-brew "ethereum"
 brew "lame"
 brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-frei0r", "with-libass", "with-libvorbis", "with-libvpx", "with-opencore-amr", "with-openjpeg", "with-opus", "with-rtmpdump", "with-speex", "with-theora", "with-tools"]
 brew "figlet"
@@ -49,11 +44,9 @@ brew "mackup"
 brew "python"
 brew "macvim", args: ["with-override-system-vim"]
 brew "mas"
-brew "mdf2iso"
 brew "mongodb"
 brew "mono"
 brew "moreutils"
-brew "mplayer"
 brew "n"
 brew "namebench"
 brew "nmap"
@@ -62,7 +55,6 @@ brew "openssh"
 brew "optipng"
 brew "pandoc"
 brew "phantomjs"
-brew "php@7.1"
 brew "pngquant", link: false
 brew "ruby-build"
 brew "rbenv"
@@ -170,7 +162,6 @@ cask "witch"
 cask "xld"
 cask "zenmap"
 mas "App Factory", id: 556464792
-mas "Contacts Sync For Google Gmail", id: 451691288
 mas "Display Menu", id: 549083868
 mas "iA Writer", id: 775737590
 mas "Kaleidoscope", id: 587512244
@@ -180,5 +171,4 @@ mas "MindNode", id: 992076693
 mas "Noizio", id: 928871589
 mas "PhotoSweeper", id: 463362050
 mas "PiPifier", id: 1160374471
-mas "Smartcast", id: 1202167980
 mas "Xcode", id: 497799835
