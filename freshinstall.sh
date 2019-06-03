@@ -126,7 +126,6 @@ e_header '🍉 Installing global node modules'
 
 #node stuff
 npm_globals=(
-  yarn
   gulp-cli
   vue-cli
   svgo

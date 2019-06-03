@@ -27,3 +27,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
+
+# curl OPENSSL
+export PATH="/usr/local/opt/curl-openssl/bin:$PATH"

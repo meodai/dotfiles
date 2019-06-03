@@ -70,6 +70,7 @@ brew "webkit2png"
 brew "wget"
 brew "wine"
 brew "winetricks"
+brew "yarn", args: ["without-node"]
 brew "youtube-dl"
 brew "browsh-org/browsh/browsh"
 brew "heroku/brew/heroku"
